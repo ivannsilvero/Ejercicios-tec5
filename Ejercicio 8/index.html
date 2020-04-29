@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 8</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="header-title "> Alumnos <span style="display:none">7mo2da</span> </h1>
+        </div>
+    </header>
+
+    <h2 class="title">Programación e <abbr title="Inteligencia Artificial">IA</abbr> II</h2>
+
+    <form class="form-inline mb-3">
+
+    </form>
+    <hr>
+
+    <b>Turno mañana</b><br>
+    <br> Alumno 1: <input id="m1" type="number" min=10 max=55>
+    <br> Alumno 2: <input id="m2" type="number" min=10 max=55>
+    <br> Alumno 3: <input id="m3" type="number" min=10 max=55>
+    <br> Alumno 4: <input id="m4" type="number" min=10 max=55>
+    <br> Alumno 5: <input id="m5" type="number" min=10 max=55>
+    <br><br><button onclick="calcularPromedioM(document.getElementById('m1').value, document.getElementById('m2').value, document.getElementById('m3').value, document.getElementById('m4').value, document.getElementById('m5').value)"> Enviar </button>
+
+    <br><br><b> Turno tarde</b><br>
+    <br> Alumno 1: <input id="t1" type="number" min=10 max=55>
+    <br> Alumno 2: <input id="t2" type="number" min=10 max=55>
+    <br> Alumno 3: <input id="t3" type="number" min=10 max=55>
+    <br> Alumno 4: <input id="t4" type="number" min=10 max=55>
+    <br> Alumno 5: <input id="t5" type="number" min=10 max=55>
+    <br> Alumno 6: <input id="t6" type="number" min=10 max=55>
+    <br><br><button onclick="calcularPromedioT(document.getElementById('t1').value, document.getElementById('t2').value, document.getElementById('t3').value, document.getElementById('t4').value, document.getElementById('t5').value, document.getElementById('t6').value)"> Enviar </button>
+
+    <br><br><b> Turno noche </b><br>
+    <br>Alumno 1:<input id="n1" type="number" min=10 max=55>
+    <br>Alumno 2:<input id="n2" type="number" min=10 max=55>
+    <br>Alumno 3:<input id="n3" type="number" min=10 max=55>
+    <br>Alumno 4:<input id="n4" type="number" min=10 max=55>
+    <br>Alumno 5:<input id="n5" type="number" min=10 max=55>
+    <br>Alumno 6:<input id="n6" type="number" min=10 max=55>
+    <br>Alumno 7:<input id="n7" type="number" min=10 max=55>
+    <br>Alumno 8:<input id="n8" type="number" min=10 max=55>
+    <br>Alumno 9:<input id="n9" type="number" min=10 max=55>
+    <br>Alumno 10: <input id="n10" type="number" min=10 max=55>
+    <br>Alumno 11: <input id="n11" type="number" min=10 max=55>
+    <br><br><button onclick="calcularPromedioN(docuent.getElementById('n1').value, docuent.getElementById('n2').value, docuent.getElementById('n3').value, docuent.getElementById('n4').value, docuent.getElementById('n5').value, docuent.getElementById('n6').value, docuent.getElementById('n7').value, docuent.getElementById('n8').value, docuent.getElementById('n9').value, docuent.getElementById('n10').value, docuent.getElementById('n11').value)"> Enviar</button>
+
+    <br> <button id="total" onclick="calcularPromedio(calcularPromedioM(document.getElementById('m1').value, document.getElementById('m2').value, document.getElementById('m3').value, document.getElementById('m4').value, document.getElementById('m5').value), calcularPromedioT(document.getElementById('t1').value, document.getElementById('t2').value, document.getElementById('t3').value, document.getElementById('t4').value, document.getElementById('t5').value, document.getElementById('t6').value), calcularPromedioN(docuent.getElementById('n1').value, docuent.getElementById('n2').value, docuent.getElementById('n3').value, docuent.getElementById('n4').value, docuent.getElementById('n5').value, docuent.getElementById('n6').value, docuent.getElementById('n7').value, docuent.getElementById('n8').value, docuent.getElementById('n9').value, docuent.getElementById('n10').value, docuent.getElementById('n11').value))"> Calcular 3 promedios </button>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="header-title "> Triángulos <span style="display:none">7mo2da</span> </h1>
+        </div>
+    </header>
+    <h2 class="title">Programación e <abbr title="Inteligencia Artificial">IA</abbr> II</h2>
+
+    <form class="form-inline mb-3">
+    </form>
+    <hr>
+
+
+    <b> Triangulo 1: </b>
+    <p>
+        <br>Lado 1: <input type="number" id=n1t1>
+        <br>
+        <br> Lado 2: <input type="number" id=n2t1>
+        <br>
+        <br> Lado 3: <input type="number" id=n3t1>
+        <br><br><button class="btn btn-primary" id="b1" onclick="tipoDeTriangulo1(document.getElementById('n1t1').value, document.getElementById('n2t1').value, document.getElementById('n3t1').value);"> Enviar </button>
+    </p>
+
+    <br>
+    <b> Triangulo 2: </b>
+    <p>
+        <br>Lado 1: <input type="number" id=n1t2 min=1>
+        <br>
+        <br> Lado 2: <input type="number" id=n2t2 min=1>
+        <br>
+        <br> Lado 3: <input type="number" id=n3t2 min=1>
+        <br><br><button id="b2" class="btn btn-primary" onclick="tipoDeTriangulo2(document.getElementById('n1t2').value, document.getElementById('n2t2').value, document.getElementById('n3t2').value)"> Enviar </button>
+    </p>
+
+    <br>
+    <b> Triangulo 3: </b>
+    <p>
+        <br>Lado 1: <input type="number" id=n1t3 min=1>
+        <br>
+        <br> Lado 2: <input type="number" id=n2t3 min=1>
+        <br>
+        <br> Lado 3: <input type="number" id=n3t3 min=1>
+        <br><br><button id="b3" class="btn btn-primary" onclick="tipoDeTriangulo3(document.getElementById('n1t3').value, document.getElementById('n2t3').value, document.getElementById('n3t3').value)"> Enviar </button>
+    </p>
+    <br>
+    <b> Triangulo 4: </b>
+    <p>
+        <br>Lado 1: <input type="number" id=n1t4 min=1>
+        <br>
+        <br> Lado 2: <input type="number" id=n2t4 min=1>
+        <br>
+        <br> Lado 3: <input type="number" id=n3t4 min=1>
+        <br><br><button id="b4" class="btn btn-primary" onclick="tipoDeTriangulo4(document.getElementById('n1t4').value, document.getElementById('n2t4').value, document.getElementById('n3t4').value)"> Enviar </button>
+    </p>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
